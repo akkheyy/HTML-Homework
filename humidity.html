@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <title> Humidity Plot </title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="cloudiness.html">Cloudiness Plot</a>
+                      <a class="dropdown-item" href="humidity.html">Humidity Plot</a>
+                      <a class="dropdown-item" href="temperature.html">Temperature Plot</a>
+                      <a class="dropdown-item" href="windspeed.html">Wind Speed Plot</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class= "col-lg-10 col-md-12 col-sm-12">
+                    <h1>Humidity (%) VS Latitude</h1>
+                    <img src="Humidity vs Latitude.png" class="img-responsive" style="width:100%; height:auto"/>
+                    <p>The majority of the cities plotted on the Humidity (%) vs. Latitude scatter plot, experience over 60% humidity. More cities with a positive latitude seem to experience a higher humidiity percentage even as the cities get furthrer from the equator. Higher humidity percentages can mean the temperature outside feels hotter than it actually is. Even those some of these cities experience temperatures cooler than cities closer to the equator, the weather could feel warmer than the temperature implies with the high humidity.</p>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                    <br/>
+                    <h4>Plots</h4>
+                    <a href="cloudiness.html">
+                        <img src="Cloudiness vs Latitude.png" width="150" height="150">
+                    </a>
+                    <a href="humidity.html">
+                        <img src="Humidity vs Latitude.png" width="150" height="150">
+                    </a>
+                    <a href="temperature.html">
+                        <img src="Temperature vs Latitude.png" width="150" height="150">
+                    </a>
+                    <a href="windspeed.html">
+                        <img src="Wind Speed vs Latitude.png" width="150" height="150">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
